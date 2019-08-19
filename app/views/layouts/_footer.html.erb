@@ -1,0 +1,14 @@
+<footer class="footer">
+  <small>
+    <%= raw t(".content_footer",
+      ror_link: link_to(t(".ror_name"), t(".url_ror")),
+      michael_link: link_to(t(".michael_name"), t(".url_michael"))) %>
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to t("about"), about_path %></li>
+      <li><%= link_to t("contact"), contact_path %></li>
+      <li><%= link_to t("new"), t(".url_new") %></li>
+    </ul>
+  </nav>
+</footer>

@@ -1,9 +1,9 @@
 <% provide(:title, t("about")) %>
-<h1><%= t "views.static_pages.about.title" %></h1>
+<h1><%= t ".title" %></h1>
 <p>
-  <%= raw t("views.static_pages.about.content_about",
-    rort_link: link_to(t("views.static_pages.about.rort_name"), t("views.static_pages.about.url_rort")),
-    book_link: link_to(t("views.static_pages.about.book_name"), t("views.static_pages.about.url_book")),
-    series_link: link_to(t("views.static_pages.about.series_name"), t("views.static_pages.about.url_series")),
-    ror_link: link_to(t("views.static_pages.about.ror_name"), t("views.static_pages.about.url_ror"))) %>
+  <%= raw t(".content_about",
+    rort_link: link_to(t(".rort_name"), t(".url_rort")),
+    book_link: link_to(t(".book_name"), t(".url_book")),
+    series_link: link_to(t(".series_name"), t(".url_series")),
+    ror_link: link_to(t(".ror_name"), t(".url_ror"))) %>
 </p>
