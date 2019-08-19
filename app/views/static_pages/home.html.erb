@@ -1,0 +1,5 @@
+<% provide(:title, t("home")) %>
+<h1><%= t "views.static_pages.home.title" %></h1>
+<p>
+  <%= raw t("views.static_pages.home.content_home", home_link: link_to(t("views.static_pages.home.ruby"), t("views.static_pages.home.url_home"))) %>
+</p>

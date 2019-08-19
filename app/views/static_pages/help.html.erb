@@ -1,0 +1,7 @@
+<% provide(:title, t("help")) %>
+<h1><%= t "views.static_pages.help.title" %></h1>
+<p>
+<%= raw t("views.static_pages.help.content_help",
+  section_link: link_to(t("views.static_pages.help.section_name"), t("views.static_pages.help.url_section")),
+  book_link: link_to(t("views.static_pages.help.book_name"), t("views.static_pages.help.url_book"))) %>
+</p>
