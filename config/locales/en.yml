@@ -53,7 +53,12 @@ en:
       michael_name: "Michael Hartl"
       url_new: "http://news.railstutorial.org/"
       content_footer: The %{ror_link} by %{michael_link}
+  controller:
+    user:
+      create_success: "Welcome to the Sample App!"
   users:
     new:
       title: "Sign up"
       signup_page: "This will be a signup page for new users."
+      create_user: "Create my account"
+      conf: "Confirmation"
