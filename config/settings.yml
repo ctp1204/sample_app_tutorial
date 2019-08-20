@@ -1,2 +1,4 @@
+users:
+  perpage: 5
 session:
   remember_me: "1"
