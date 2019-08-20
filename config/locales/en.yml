@@ -17,6 +17,7 @@ en:
   pls_login: "Please log in."
   sure: "You sure?"
   delete: "delete"
+  btn_submit: "Submit"
   static_pages:
     home:
       title: "Welcome to the Sample App"
@@ -88,3 +89,11 @@ en:
       login: "Log in"
       sign_up: "Sign up now!"
       new_user: "New user?"
+      remember: "Remember me on this computer"
+  password_resets:
+    new:
+      forgot: "Forgot Password"
+    edit:
+      reset: "Reset password"
+      conf: "Confirmation"
+      up_pass: "Update password"
