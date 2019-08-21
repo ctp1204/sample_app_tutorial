@@ -11,6 +11,8 @@ class UsersController < ApplicationController
 
   def show
     redirect_to root_path && return unless @user.activated?
+    @microposts = @user.microposts.paginate page: params[:page],
+      per_page: Settings.users.perpage
   end
 
   def new
@@ -51,7 +53,7 @@ class UsersController < ApplicationController
 
   def user_params
     params.require(:user).permit :name, :email, :password,
-      :password_confirmation
+      :password_confirmation, :avatar
   end
 
   def load_user
@@ -68,12 +70,5 @@ class UsersController < ApplicationController
   def correct_user
     @user = User.find_by id: params[:id]
     redirect_to(root_path) unless current_user?(@user)
-  end
-
-  def logged_in_user
-    return if logged_in?
-    store_location
-    flash[:danger] = t "pls_login"
-    redirect_to login_path
   end
 end
